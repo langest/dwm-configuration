@@ -2,16 +2,15 @@
 
 /* appearance */
 static const char font[]            = "Sans 8";
-static const char normbordercolor[] = "#444444";
-static const char normbgcolor[]     = "#222222";
-static const char normfgcolor[]     = "#bbbbbb";
-static const char selbordercolor[]  = "#A9CDEB";
-static const char selbgcolor[]      = "#A9CDEB";
-static const char selfgcolor[]      = "#222222";
+static const char normbordercolor[] = "#2D2D2D";
+static const char normbgcolor[]     = "#DFDFFE";
+static const char normfgcolor[]     = "#2D2D2D";
+static const char selbordercolor[]  = "#DFDFFE";
+static const char selbgcolor[]      = "#2D2D2D";
+static const char selfgcolor[]      = "#DFDFFE";
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappx     = 6;        /* gap pixel between windows */
-static const unsigned int rSideMarg = 240;      /* Margin at the right side of the screen */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 static const Bool statusmarkup      = True;     /* True means use pango markup in status message */
@@ -104,14 +103,14 @@ static Key keys[] = {
 	TAGKEYS(                     XK_8,                      7)
 	TAGKEYS(                     XK_9,                      8)
 	{ MODKEY|ShiftMask,          XK_q,      quit,           {0} },
-	{ 0,                0x1008FF02,      spawn,          {.v = brightnessInc } },
-	{ 0,                0x1008FF03,      spawn,          {.v = brightnessDec } },
-	{ 0,                0x1008FF11,      spawn,          {.v = amixDec } },
-	{ 0,                0x1008FF12,      spawn,          {.v = amixSil } },
-	{ 0,                0x1008FF13,      spawn,          {.v = amixInc } },
-	{ 0,                0x1008FF16,      spawn,          {.v = mpdPrev } },
-	{ 0,                0x1008FF17,      spawn,          {.v = mpdNext } },
-	{ 0,                0x1008FF14,      spawn,          {.v = mpdPlayPause } },
+	{ 0,                   0x1008FF02,      spawn,          {.v = brightnessInc } },
+	{ 0,                   0x1008FF03,      spawn,          {.v = brightnessDec } },
+	{ 0,                   0x1008FF11,      spawn,          {.v = amixDec } },
+	{ 0,                   0x1008FF12,      spawn,          {.v = amixSil } },
+	{ 0,                   0x1008FF13,      spawn,          {.v = amixInc } },
+	{ 0,                   0x1008FF16,      spawn,          {.v = mpdPrev } },
+	{ 0,                   0x1008FF17,      spawn,          {.v = mpdNext } },
+	{ 0,                   0x1008FF14,      spawn,          {.v = mpdPlayPause } },
 };
 
 /* button definitions */
