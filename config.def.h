@@ -66,12 +66,14 @@ static const char *amixSil[]        = { "amixer", "set", "Master", "0%", NULL };
 static const char *mpdPrev[]        = { "mpc", "prev", NULL };
 static const char *mpdNext[]        = { "mpc", "next", NULL };
 static const char *mpdPlayPause[]   = { "mpc", "toggle", NULL };
+static const char *randomwp[]       = { "feh", "--randomize", "--recursive", "--bg-fill", "images/wps/" };
 
 static Key keys[] = {
 	/* modifier                  key        function        argument */
 	{ MODKEY,                    XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,          XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,          XK_f,      spawn,          {.v = firefoxcmd } },
+	{ MODKEY|ShiftMask,          XK_w,      spawn,          {.v = randomwp } },
 	{ MODKEY,                    XK_b,      togglebar,      {0} },
 	{ MODKEY,                    XK_l,      focusstack,     {.i = +1 } },
 	{ MODKEY,                    XK_h,      focusstack,     {.i = -1 } },
