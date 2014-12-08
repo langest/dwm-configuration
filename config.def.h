@@ -1,13 +1,15 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+#define _FG_ "#fcf7bf"
+#define _BG_ "#865f34"
 static const char font[]            = "Sans 8";
-static const char normbordercolor[] = "#2D2D2D";
-static const char normbgcolor[]     = "#DFDFFE";
-static const char normfgcolor[]     = "#2D2D2D";
-static const char selbordercolor[]  = "#DFDFFE";
-static const char selbgcolor[]      = "#2D2D2D";
-static const char selfgcolor[]      = "#DFDFFE";
+static const char normbordercolor[] = _FG_;
+static const char normbgcolor[]     = _BG_;
+static const char normfgcolor[]     = _FG_;
+static const char selbordercolor[]  = _BG_;
+static const char selbgcolor[]      = _FG_;
+static const char selfgcolor[]      = _BG_;
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappx     = 6;        /* gap pixel between windows */
