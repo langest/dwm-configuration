@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-#define _FG_ "#fcf7bf"
-#define _BG_ "#865f34"
+#define _FG_ "#fafafa"
+#define _BG_ "#2d2d2d"
 static const char font[]            = "Sans 8";
-static const char normbordercolor[] = _FG_;
+static const char normbordercolor[] = _BG_;
 static const char normbgcolor[]     = _BG_;
 static const char normfgcolor[]     = _FG_;
-static const char selbordercolor[]  = _BG_;
+static const char selbordercolor[]  = _FG_;
 static const char selbgcolor[]      = _FG_;
 static const char selfgcolor[]      = _BG_;
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
