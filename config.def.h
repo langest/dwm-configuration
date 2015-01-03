@@ -66,7 +66,7 @@ static const char *amixSil[]        = { "amixer", "set", "Master", "0%", NULL };
 static const char *mpdPrev[]        = { "mpc", "prev", NULL };
 static const char *mpdNext[]        = { "mpc", "next", NULL };
 static const char *mpdPlayPause[]   = { "mpc", "toggle", NULL };
-static const char *randomwp[]       = { "feh", "--randomize", "--recursive", "--bg-fill", "images/wps/" };
+static const char *randomwp[]       = { "feh", "--randomize", "--recursive", "--bg-fill", "/home/langest/images/wps/" };
 
 static Key keys[] = {
 	/* modifier                  key        function        argument */
