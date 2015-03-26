@@ -57,6 +57,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *firefoxcmd[]     = { "firefox", NULL };
+static const char *slimlockcmd[]    = { "slimlock", NULL };
 static const char *dmenucmd[]       = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]        = { "urxvtc", NULL };
 static const char *brightnessInc[]  = { "xbacklight", "+5%", NULL };
@@ -67,13 +68,14 @@ static const char *amixSil[]        = { "amixer", "set", "Master", "0%", NULL };
 static const char *mpdPrev[]        = { "mpc", "prev", NULL };
 static const char *mpdNext[]        = { "mpc", "next", NULL };
 static const char *mpdPlayPause[]   = { "mpc", "toggle", NULL };
-static const char *randomwp[]       = { "feh", "--randomize", "--recursive", "--bg-fill", "/home/langest/images/wps/" };
+static const char *randomwp[]       = { "feh", "--randomize", "--recursive", "--bg-fill", "/home/langest/currentwps/" };
 
 static Key keys[] = {
 	/* modifier                  key        function        argument */
 	{ MODKEY,                    XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,          XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,          XK_f,      spawn,          {.v = firefoxcmd } },
+	{ MODKEY|ShiftMask,          XK_l,      spawn,          {.v = slimlockcmd } },
 	{ MODKEY|ShiftMask,          XK_w,      spawn,          {.v = randomwp } },
 	{ MODKEY,                    XK_b,      togglebar,      {0} },
 	{ MODKEY,                    XK_l,      focusstack,     {.i = +1 } },
