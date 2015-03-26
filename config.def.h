@@ -1,24 +1,25 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-#define _FG_ "#fafafa"
-#define _BG_ "#2d2d2d"
-static const char font[]            = "Sans 8";
-static const char normbordercolor[] = _BG_;
-static const char normbgcolor[]     = _BG_;
-static const char normfgcolor[]     = _FG_;
-static const char selbordercolor[]  = _FG_;
-static const char selbgcolor[]      = _FG_;
-static const char selfgcolor[]      = _BG_;
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+#define FG_LIGHT_ "#8cbc65"
+#define FG_DARK_  "#689742"
+#define BG_       "#1e1e1e"
+static const char font[]            = "WenQuanYi Zen Hei 8";
+static const char normbordercolor[] = BG_;
+static const char normbgcolor[]     = BG_;
+static const char normfgcolor[]     = FG_DARK_;
+static const char selbordercolor[]  = FG_DARK_;
+static const char selbgcolor[]      = FG_LIGHT_;
+static const char selfgcolor[]      = BG_;
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappx     = 6;        /* gap pixel between windows */
+static const unsigned int gappx     = 4;        /* gap pixel between windows */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
 static const Bool statusmarkup      = True;     /* True means use pango markup in status message */
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "一", "二", "三","四", "五", "六", "七", "八", "九" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
